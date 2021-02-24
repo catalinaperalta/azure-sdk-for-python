@@ -60,7 +60,10 @@ class OperationLocationReplacer(RecordingProcessor):
                 location_header = "location"
             if location_header:
                 if len(headers[location_header]) > 0:
-                    suffix = headers[location_header][0].split("/formrecognizer/")[1]
+                    if isinstance(headers[location_header], list):
+                        suffix = headers[location_header][0].split("/formrecognizer/")[1]
+                    else:
+                        suffix = headers[location_header].split("/formrecognizer/")[1]
                     response['headers'][location_header] = [self._replacement + suffix]
             return response
         except (KeyError, ValueError):
@@ -136,6 +139,7 @@ class FormRecognizerTest(AzureTestCase):
         self.business_card_url_jpg = self.get_blob_url(testing_container_sas_url, "testingdata", "businessCard.jpg")
         self.business_card_url_png = self.get_blob_url(testing_container_sas_url, "testingdata", "businessCard.png")
         self.business_card_multipage_url_pdf = self.get_blob_url(testing_container_sas_url, "testingdata", "business-card-multipage.pdf")
+        self.id_document_url_jpg = self.get_blob_url(testing_container_sas_url, "testingdata", "license_2.jpg")
         self.invoice_url_pdf = self.get_blob_url(testing_container_sas_url, "testingdata", "Invoice_1.pdf")
         self.invoice_url_tiff = self.get_blob_url(testing_container_sas_url, "testingdata", "Invoice_1.tiff")
         self.multipage_vendor_url_pdf = self.get_blob_url(testing_container_sas_url, "testingdata", "multi1.pdf")
@@ -150,6 +154,7 @@ class FormRecognizerTest(AzureTestCase):
         self.business_card_jpg = os.path.abspath(os.path.join(os.path.abspath(__file__), "..", "./sample_forms/business_cards/business-card-english.jpg"))
         self.business_card_png = os.path.abspath(os.path.join(os.path.abspath(__file__), "..", "./sample_forms/business_cards/business-card-english.png"))
         self.business_card_multipage_pdf = os.path.abspath(os.path.join(os.path.abspath(__file__), "..", "./sample_forms/business_cards/business-card-multipage.pdf"))
+        self.id_document_jpg = os.path.abspath(os.path.join(os.path.abspath(__file__), "..", "./sample_forms/id_documents/license.jpg"))
         self.invoice_pdf = os.path.abspath(os.path.join(os.path.abspath(__file__), "..", "./sample_forms/forms/Invoice_1.pdf"))
         self.invoice_tiff = os.path.abspath(os.path.join(os.path.abspath(__file__), "..", "./sample_forms/forms/Invoice_1.tiff"))
         self.form_jpg = os.path.abspath(os.path.join(os.path.abspath(__file__), "..", "./sample_forms/forms/Form_1.jpg"))
