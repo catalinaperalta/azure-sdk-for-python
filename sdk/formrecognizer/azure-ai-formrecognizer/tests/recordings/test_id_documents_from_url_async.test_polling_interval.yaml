@@ -1,0 +1,148 @@
+interactions:
+- request:
+    body: 'b''{"source": "blob_sas_url"}'''
+    headers:
+      Accept:
+      - application/json
+      Content-Length:
+      - '216'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: POST
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+  response:
+    body:
+      string: ''
+    headers:
+      apim-request-id: 18b4bf99-3579-42e0-b840-364a71f525cb
+      content-length: '0'
+      date: Thu, 25 Feb 2021 17:04:04 GMT
+      operation-location:
+      - https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/18b4bf99-3579-42e0-b840-364a71f525cb
+      strict-transport-security: max-age=31536000; includeSubDomains; preload
+      x-content-type-options: nosniff
+      x-envoy-upstream-service-time: '215'
+    status:
+      code: 202
+      message: Accepted
+    url: https://krpratic-python-formrecognizer-canary.cognitiveservices.azure.com//formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/18b4bf99-3579-42e0-b840-364a71f525cb
+  response:
+    body:
+      string: '{"status": "succeeded", "createdDateTime": "2021-02-25T17:04:04Z",
+        "lastUpdatedDateTime": "2021-02-25T17:04:08Z", "analyzeResult": {"version":
+        "2.1.0", "readResults": [{"page": 1, "angle": -0.4021, "width": 506, "height":
+        319, "unit": "pixel"}], "documentResults": [{"docType": "prebuilt:idDocument:driverLicense",
+        "docTypeConfidence": 0.995, "pageRange": [1, 1], "fields": {"DocumentNumber":
+        {"type": "string", "valueString": "99 999 999", "text": "99 999 999", "boundingBox":
+        [216.8, 74.3, 314, 72.9, 314.2, 90, 217, 91.4], "page": 1, "confidence": 0.99},
+        "LastName": {"type": "string", "valueString": "SAMPLE", "text": "SAMPLE",
+        "boundingBox": [178, 135, 242, 134, 241, 147, 179, 147], "page": 1, "confidence":
+        0.973}, "FirstName": {"type": "string", "valueString": "JANICE ANN", "text":
+        "JANICE ANN", "boundingBox": [179, 147, 269, 147, 269, 161, 179, 161], "page":
+        1, "confidence": 0.973}, "DateOfBirth": {"type": "date", "valueDate": "1975-08-04",
+        "text": "08/04/1975", "boundingBox": [216, 93, 313, 92, 313, 109, 216, 108],
+        "page": 1, "confidence": 0.99}, "DateOfExpiration": {"type": "date", "valueDate":
+        "2023-08-05", "text": "08/05/2023", "boundingBox": [217, 113, 312, 112, 312,
+        129, 217, 129], "page": 1, "confidence": 0.99}, "Sex": {"type": "string",
+        "valueString": "F", "text": "F", "boundingBox": [211, 199, 222, 199, 222,
+        211, 211, 211], "page": 1, "confidence": 0.992}, "Address": {"type": "string",
+        "valueString": "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "text":
+        "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "boundingBox": [178, 161,
+        359, 161, 359, 195, 178, 195], "page": 1, "confidence": 0.934}, "Country":
+        {"type": "string", "valueString": "United States", "confidence": 0.995}, "Region":
+        {"type": "string", "valueString": "Pennsylvania", "confidence": 0.991}}}]}}'
+    headers:
+      apim-request-id: d0cb8df3-4187-4eb1-a83b-02f2a16da21e
+      content-length: '1621'
+      content-type: application/json; charset=utf-8
+      date: Thu, 25 Feb 2021 17:04:10 GMT
+      strict-transport-security: max-age=31536000; includeSubDomains; preload
+      x-content-type-options: nosniff
+      x-envoy-upstream-service-time: '29'
+    status:
+      code: 200
+      message: OK
+    url: https://krpratic-python-formrecognizer-canary.cognitiveservices.azure.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/18b4bf99-3579-42e0-b840-364a71f525cb
+- request:
+    body: 'b''{"source": "blob_sas_url"}'''
+    headers:
+      Accept:
+      - application/json
+      Content-Length:
+      - '216'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: POST
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+  response:
+    body:
+      string: ''
+    headers:
+      apim-request-id: 63245dd7-6f8e-4661-aa39-634c36e8281a
+      content-length: '0'
+      date: Thu, 25 Feb 2021 17:04:10 GMT
+      operation-location:
+      - https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/63245dd7-6f8e-4661-aa39-634c36e8281a
+      strict-transport-security: max-age=31536000; includeSubDomains; preload
+      x-content-type-options: nosniff
+      x-envoy-upstream-service-time: '534'
+    status:
+      code: 202
+      message: Accepted
+    url: https://krpratic-python-formrecognizer-canary.cognitiveservices.azure.com//formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/63245dd7-6f8e-4661-aa39-634c36e8281a
+  response:
+    body:
+      string: '{"status": "succeeded", "createdDateTime": "2021-02-25T17:04:11Z",
+        "lastUpdatedDateTime": "2021-02-25T17:04:14Z", "analyzeResult": {"version":
+        "2.1.0", "readResults": [{"page": 1, "angle": -0.4021, "width": 506, "height":
+        319, "unit": "pixel"}], "documentResults": [{"docType": "prebuilt:idDocument:driverLicense",
+        "docTypeConfidence": 0.995, "pageRange": [1, 1], "fields": {"DocumentNumber":
+        {"type": "string", "valueString": "99 999 999", "text": "99 999 999", "boundingBox":
+        [216.8, 74.3, 314, 72.9, 314.2, 90, 217, 91.4], "page": 1, "confidence": 0.99},
+        "LastName": {"type": "string", "valueString": "SAMPLE", "text": "SAMPLE",
+        "boundingBox": [178, 135, 242, 134, 241, 147, 179, 147], "page": 1, "confidence":
+        0.973}, "FirstName": {"type": "string", "valueString": "JANICE ANN", "text":
+        "JANICE ANN", "boundingBox": [179, 147, 269, 147, 269, 161, 179, 161], "page":
+        1, "confidence": 0.973}, "DateOfBirth": {"type": "date", "valueDate": "1975-08-04",
+        "text": "08/04/1975", "boundingBox": [216, 93, 313, 92, 313, 109, 216, 108],
+        "page": 1, "confidence": 0.99}, "DateOfExpiration": {"type": "date", "valueDate":
+        "2023-08-05", "text": "08/05/2023", "boundingBox": [217, 113, 312, 112, 312,
+        129, 217, 129], "page": 1, "confidence": 0.99}, "Sex": {"type": "string",
+        "valueString": "F", "text": "F", "boundingBox": [211, 199, 222, 199, 222,
+        211, 211, 211], "page": 1, "confidence": 0.992}, "Address": {"type": "string",
+        "valueString": "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "text":
+        "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "boundingBox": [178, 161,
+        359, 161, 359, 195, 178, 195], "page": 1, "confidence": 0.934}, "Country":
+        {"type": "string", "valueString": "United States", "confidence": 0.995}, "Region":
+        {"type": "string", "valueString": "Pennsylvania", "confidence": 0.991}}}]}}'
+    headers:
+      apim-request-id: 09336264-bb3e-4b62-b0c6-38b00a52c12b
+      content-length: '1621'
+      content-type: application/json; charset=utf-8
+      date: Thu, 25 Feb 2021 17:04:18 GMT
+      strict-transport-security: max-age=31536000; includeSubDomains; preload
+      x-content-type-options: nosniff
+      x-envoy-upstream-service-time: '58'
+    status:
+      code: 200
+      message: OK
+    url: https://krpratic-python-formrecognizer-canary.cognitiveservices.azure.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/63245dd7-6f8e-4661-aa39-634c36e8281a
+version: 1

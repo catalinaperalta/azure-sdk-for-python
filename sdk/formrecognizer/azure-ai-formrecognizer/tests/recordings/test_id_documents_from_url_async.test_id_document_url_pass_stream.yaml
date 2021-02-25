@@ -1,0 +1,31 @@
+interactions:
+- request:
+    body: 'b''{"source": "<_io.BufferedReader name=\''C:\\\\\\\\Users\\\\\\\\caperal\\\\\\\\Documents\\\\\\\\Python\\\\\\\\azure-sdk-for-python\\\\\\\\sdk\\\\\\\\formrecognizer\\\\\\\\azure-ai-formrecognizer\\\\\\\\tests\\\\\\\\sample_forms\\\\\\\\id_documents\\\\\\\\license.jpg\''>"}'''
+    headers:
+      Accept:
+      - application/json
+      Content-Length:
+      - '219'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: POST
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+  response:
+    body:
+      string: '{"error": {"code": "InvalidImageURL", "innerError": {"requestId": "062082b9-a094-4b7a-8af0-46797769c337"},
+        "message": "Image URL is badly formatted."}}'
+    headers:
+      apim-request-id: 062082b9-a094-4b7a-8af0-46797769c337
+      content-length: '144'
+      content-type: application/json; charset=utf-8
+      date: Thu, 25 Feb 2021 17:03:57 GMT
+      strict-transport-security: max-age=31536000; includeSubDomains; preload
+      x-content-type-options: nosniff
+      x-envoy-upstream-service-time: '3'
+    status:
+      code: 400
+      message: Bad Request
+    url: https://krpratic-python-formrecognizer-canary.cognitiveservices.azure.com//formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+version: 1

@@ -1,0 +1,190 @@
+interactions:
+- request:
+    body: 'b''{"source": "blob_sas_url"}'''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '216'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: POST
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+  response:
+    body:
+      string: ''
+    headers:
+      apim-request-id:
+      - 946ceab5-e0f6-4600-ac5b-6e77ba479838
+      content-length:
+      - '0'
+      date:
+      - Thu, 25 Feb 2021 17:02:54 GMT
+      operation-location:
+      - https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/946ceab5-e0f6-4600-ac5b-6e77ba479838
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-envoy-upstream-service-time:
+      - '172'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/946ceab5-e0f6-4600-ac5b-6e77ba479838
+  response:
+    body:
+      string: '{"status": "succeeded", "createdDateTime": "2021-02-25T17:02:55Z",
+        "lastUpdatedDateTime": "2021-02-25T17:02:59Z", "analyzeResult": {"version":
+        "2.1.0", "readResults": [{"page": 1, "angle": -0.4021, "width": 506, "height":
+        319, "unit": "pixel"}], "documentResults": [{"docType": "prebuilt:idDocument:driverLicense",
+        "docTypeConfidence": 0.995, "pageRange": [1, 1], "fields": {"DocumentNumber":
+        {"type": "string", "valueString": "99 999 999", "text": "99 999 999", "boundingBox":
+        [216.8, 74.3, 314, 72.9, 314.2, 90, 217, 91.4], "page": 1, "confidence": 0.99},
+        "LastName": {"type": "string", "valueString": "SAMPLE", "text": "SAMPLE",
+        "boundingBox": [178, 135, 242, 134, 241, 147, 179, 147], "page": 1, "confidence":
+        0.973}, "FirstName": {"type": "string", "valueString": "JANICE ANN", "text":
+        "JANICE ANN", "boundingBox": [179, 147, 269, 147, 269, 161, 179, 161], "page":
+        1, "confidence": 0.973}, "DateOfBirth": {"type": "date", "valueDate": "1975-08-04",
+        "text": "08/04/1975", "boundingBox": [216, 93, 313, 92, 313, 109, 216, 108],
+        "page": 1, "confidence": 0.99}, "DateOfExpiration": {"type": "date", "valueDate":
+        "2023-08-05", "text": "08/05/2023", "boundingBox": [217, 113, 312, 112, 312,
+        129, 217, 129], "page": 1, "confidence": 0.99}, "Sex": {"type": "string",
+        "valueString": "F", "text": "F", "boundingBox": [211, 199, 222, 199, 222,
+        211, 211, 211], "page": 1, "confidence": 0.992}, "Address": {"type": "string",
+        "valueString": "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "text":
+        "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "boundingBox": [178, 161,
+        359, 161, 359, 195, 178, 195], "page": 1, "confidence": 0.934}, "Country":
+        {"type": "string", "valueString": "United States", "confidence": 0.995}, "Region":
+        {"type": "string", "valueString": "Pennsylvania", "confidence": 0.991}}}]}}'
+    headers:
+      apim-request-id:
+      - c7cf15ea-07b4-4a85-b9ba-ba80caec1c97
+      content-length:
+      - '1621'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 25 Feb 2021 17:03:00 GMT
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-envoy-upstream-service-time:
+      - '39'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: 'b''{"source": "blob_sas_url"}'''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '216'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: POST
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=false
+  response:
+    body:
+      string: ''
+    headers:
+      apim-request-id:
+      - 04fc4157-8af8-4b7e-93c0-7eebdee810b7
+      content-length:
+      - '0'
+      date:
+      - Thu, 25 Feb 2021 17:03:02 GMT
+      operation-location:
+      - https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/04fc4157-8af8-4b7e-93c0-7eebdee810b7
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-envoy-upstream-service-time:
+      - '731'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/04fc4157-8af8-4b7e-93c0-7eebdee810b7
+  response:
+    body:
+      string: '{"status": "succeeded", "createdDateTime": "2021-02-25T17:03:02Z",
+        "lastUpdatedDateTime": "2021-02-25T17:03:06Z", "analyzeResult": {"version":
+        "2.1.0", "readResults": [{"page": 1, "angle": -0.4021, "width": 506, "height":
+        319, "unit": "pixel"}], "documentResults": [{"docType": "prebuilt:idDocument:driverLicense",
+        "docTypeConfidence": 0.995, "pageRange": [1, 1], "fields": {"DocumentNumber":
+        {"type": "string", "valueString": "99 999 999", "text": "99 999 999", "boundingBox":
+        [216.8, 74.3, 314, 72.9, 314.2, 90, 217, 91.4], "page": 1, "confidence": 0.99},
+        "LastName": {"type": "string", "valueString": "SAMPLE", "text": "SAMPLE",
+        "boundingBox": [178, 135, 242, 134, 241, 147, 179, 147], "page": 1, "confidence":
+        0.973}, "FirstName": {"type": "string", "valueString": "JANICE ANN", "text":
+        "JANICE ANN", "boundingBox": [179, 147, 269, 147, 269, 161, 179, 161], "page":
+        1, "confidence": 0.973}, "DateOfBirth": {"type": "date", "valueDate": "1975-08-04",
+        "text": "08/04/1975", "boundingBox": [216, 93, 313, 92, 313, 109, 216, 108],
+        "page": 1, "confidence": 0.99}, "DateOfExpiration": {"type": "date", "valueDate":
+        "2023-08-05", "text": "08/05/2023", "boundingBox": [217, 113, 312, 112, 312,
+        129, 217, 129], "page": 1, "confidence": 0.99}, "Sex": {"type": "string",
+        "valueString": "F", "text": "F", "boundingBox": [211, 199, 222, 199, 222,
+        211, 211, 211], "page": 1, "confidence": 0.992}, "Address": {"type": "string",
+        "valueString": "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "text":
+        "123 MAIN STREET APT. 1 HARRISBURG, PA 17101-0000", "boundingBox": [178, 161,
+        359, 161, 359, 195, 178, 195], "page": 1, "confidence": 0.934}, "Country":
+        {"type": "string", "valueString": "United States", "confidence": 0.995}, "Region":
+        {"type": "string", "valueString": "Pennsylvania", "confidence": 0.991}}}]}}'
+    headers:
+      apim-request-id:
+      - e10b54a1-3564-4ede-a04c-9b34b96c135e
+      content-length:
+      - '1621'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 25 Feb 2021 17:03:09 GMT
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-envoy-upstream-service-time:
+      - '37'
+    status:
+      code: 200
+      message: OK
+version: 1

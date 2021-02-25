@@ -1,0 +1,250 @@
+interactions:
+- request:
+    body: '!!! The request body has been omitted from the recording because its size
+      200581 is larger than 128KB. !!!'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '200581'
+      Content-Type:
+      - image/jpeg
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: POST
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyze?includeTextDetails=true
+  response:
+    body:
+      string: ''
+    headers:
+      apim-request-id:
+      - b5b77ced-4b82-4449-a06b-3fd8b8cf6de8
+      content-length:
+      - '0'
+      date:
+      - Thu, 25 Feb 2021 17:09:52 GMT
+      operation-location:
+      - https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/b5b77ced-4b82-4449-a06b-3fd8b8cf6de8
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-envoy-upstream-service-time:
+      - '146'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-ai-formrecognizer/3.1.0b4 Python/3.8.5 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://region.api.cognitive.microsoft.com/formrecognizer/v2.1-preview.3/prebuilt/idDocument/analyzeResults/b5b77ced-4b82-4449-a06b-3fd8b8cf6de8
+  response:
+    body:
+      string: '{"status": "succeeded", "createdDateTime": "2021-02-25T17:09:53Z",
+        "lastUpdatedDateTime": "2021-02-25T17:09:57Z", "analyzeResult": {"version":
+        "2.1.0", "readResults": [{"page": 1, "angle": -0.1923, "width": 795, "height":
+        501, "unit": "pixel", "lines": [{"text": "MASSACHUSETTS", "boundingBox": [26,
+        18, 399, 20, 398, 69, 26, 68], "words": [{"text": "MASSACHUSETTS", "boundingBox":
+        [26, 19, 398, 29, 399, 62, 26, 69], "confidence": 0.936}], "appearance": {"style":
+        {"name": "print", "confidence": 0.995}}}, {"text": "DRIVER''S", "boundingBox":
+        [495, 33, 627, 32, 627, 59, 495, 60], "words": [{"text": "DRIVER''S", "boundingBox":
+        [496, 34, 627, 33, 625, 60, 497, 60], "confidence": 0.951}], "appearance":
+        {"style": {"name": "print", "confidence": 1}}}, {"text": "KASSACHUSE", "boundingBox":
+        [327, 65, 399, 63, 400, 78, 328, 81], "words": [{"text": "KASSACHUSE", "boundingBox":
+        [328, 69, 399, 65, 399, 78, 329, 82], "confidence": 0.743}], "appearance":
+        {"style": {"name": "print", "confidence": 0.99}}}, {"text": "LICENSE", "boundingBox":
+        [502, 60, 624, 60, 624, 88, 502, 88], "words": [{"text": "LICENSE", "boundingBox":
+        [503, 61, 624, 61, 623, 88, 503, 89], "confidence": 0.984}], "appearance":
+        {"style": {"name": "print", "confidence": 1}}}, {"text": "MUSA", "boundingBox":
+        [695, 81, 763, 73, 766, 90, 699, 104], "words": [{"text": "MUSA", "boundingBox":
+        [695, 80, 762, 73, 766, 93, 698, 104], "confidence": 0.565}], "appearance":
+        {"style": {"name": "print", "confidence": 0.995}}}, {"text": "ICH", "boundingBox":
+        [448, 106, 458, 122, 447, 130, 438, 114], "words": [{"text": "ICH", "boundingBox":
+        [448, 106, 459, 123, 447, 129, 438, 112], "confidence": 0.638}], "appearance":
+        {"style": {"name": "print", "confidence": 0.976}}}, {"text": "CON", "boundingBox":
+        [719, 106, 788, 89, 794, 117, 722, 134], "words": [{"text": "CON", "boundingBox":
+        [719, 106, 786, 89, 792, 116, 723, 133], "confidence": 0.638}], "appearance":
+        {"style": {"name": "print", "confidence": 1}}}, {"text": "4a ISS", "boundingBox":
+        [422, 138, 469, 138, 469, 152, 422, 153], "words": [{"text": "4a", "boundingBox":
+        [422, 140, 441, 139, 441, 152, 422, 153], "confidence": 0.984}, {"text": "ISS",
+        "boundingBox": [444, 138, 469, 138, 469, 153, 444, 152], "confidence": 0.981}],
+        "appearance": {"style": {"name": "print", "confidence": 0.999}}}, {"text":
+        "01/12/2016", "boundingBox": [443, 152, 571, 152, 571, 178, 443, 177], "words":
+        [{"text": "01/12/2016", "boundingBox": [443, 153, 572, 153, 570, 179, 444,
+        178], "confidence": 0.978}], "appearance": {"style": {"name": "print", "confidence":
+        0.999}}}, {"text": "4d NUMBER", "boundingBox": [588, 137, 675, 137, 674, 152,
+        588, 152], "words": [{"text": "4d", "boundingBox": [590, 138, 609, 138, 609,
+        152, 589, 151], "confidence": 0.983}, {"text": "NUMBER", "boundingBox": [613,
+        138, 675, 137, 675, 153, 613, 152], "confidence": 0.985}], "appearance": {"style":
+        {"name": "print", "confidence": 1}}}, {"text": "S99988801", "boundingBox":
+        [612, 153, 766, 152, 766, 182, 612, 183], "words": [{"text": "S99988801",
+        "boundingBox": [613, 154, 765, 153, 765, 183, 613, 183], "confidence": 0.974}],
+        "appearance": {"style": {"name": "print", "confidence": 1}}}, {"text": "Cur
+        C. Swinny REGISTRAR", "boundingBox": [68, 175, 62, 385, 40, 385, 41, 175],
+        "words": [{"text": "Cur", "boundingBox": [67, 184, 67, 225, 40, 226, 41, 185],
+        "confidence": 0.563}, {"text": "C.", "boundingBox": [67, 230, 66, 249, 40,
+        249, 40, 231], "confidence": 0.826}, {"text": "Swinny", "boundingBox": [66,
+        254, 64, 307, 40, 307, 40, 255], "confidence": 0.559}, {"text": "REGISTRAR",
+        "boundingBox": [63, 312, 56, 385, 41, 385, 40, 312], "confidence": 0.932}],
+        "appearance": {"style": {"name": "handwriting", "confidence": 0.862}}}, {"text":
+        "4b EXP", "boundingBox": [425, 182, 476, 182, 477, 197, 425, 198], "words":
+        [{"text": "4b", "boundingBox": [425, 183, 444, 183, 444, 198, 425, 198], "confidence":
+        0.976}, {"text": "EXP", "boundingBox": [447, 183, 476, 182, 477, 198, 447,
+        198], "confidence": 0.983}], "appearance": {"style": {"name": "print", "confidence":
+        1}}}, {"text": "3 DOB", "boundingBox": [591, 183, 643, 182, 644, 198, 591,
+        198], "words": [{"text": "3", "boundingBox": [592, 184, 604, 184, 603, 198,
+        591, 197], "confidence": 0.987}, {"text": "DOB", "boundingBox": [612, 183,
+        644, 183, 644, 198, 611, 198], "confidence": 0.987}], "appearance": {"style":
+        {"name": "print", "confidence": 1}}}, {"text": "CS59", "boundingBox": [349,
+        212, 394, 211, 395, 232, 351, 233], "words": [{"text": "CS59", "boundingBox":
+        [349, 212, 393, 211, 394, 232, 349, 233], "confidence": 0.979}], "appearance":
+        {"style": {"name": "print", "confidence": 1}}}, {"text": "01/12/2021", "boundingBox":
+        [443, 197, 569, 197, 569, 221, 444, 222], "words": [{"text": "01/12/2021",
+        "boundingBox": [444, 198, 569, 197, 568, 222, 445, 222], "confidence": 0.981}],
+        "appearance": {"style": {"name": "print", "confidence": 0.999}}}, {"text":
+        "01/12/1959", "boundingBox": [611, 197, 762, 197, 762, 226, 611, 227], "words":
+        [{"text": "01/12/1959", "boundingBox": [611, 198, 761, 198, 761, 227, 611,
+        228], "confidence": 0.983}], "appearance": {"style": {"name": "print", "confidence":
+        0.999}}}, {"text": "9 CLASS 12 REST", "boundingBox": [425, 227, 566, 227,
+        566, 244, 424, 243], "words": [{"text": "9", "boundingBox": [425, 227, 436,
+        228, 435, 243, 425, 243], "confidence": 0.859}, {"text": "CLASS", "boundingBox":
+        [439, 228, 491, 228, 491, 244, 438, 243], "confidence": 0.985}, {"text": "12",
+        "boundingBox": [506, 228, 526, 228, 525, 244, 506, 244], "confidence": 0.986},
+        {"text": "REST", "boundingBox": [529, 228, 567, 228, 566, 244, 528, 244],
+        "confidence": 0.986}], "appearance": {"style": {"name": "print", "confidence":
+        0.999}}}, {"text": "NONE", "boundingBox": [530, 242, 586, 243, 586, 261, 530,
+        261], "words": [{"text": "NONE", "boundingBox": [530, 242, 586, 242, 586,
+        261, 530, 260], "confidence": 0.987}], "appearance": {"style": {"name": "print",
+        "confidence": 1}}}, {"text": "9a END", "boundingBox": [617, 228, 701, 230,
+        700, 244, 616, 242], "words": [{"text": "9a", "boundingBox": [620, 230, 641,
+        229, 641, 243, 620, 243], "confidence": 0.725}, {"text": "END", "boundingBox":
+        [644, 229, 676, 230, 675, 244, 644, 243], "confidence": 0.859}], "appearance":
+        {"style": {"name": "print", "confidence": 0.998}}}, {"text": "D", "boundingBox":
+        [440, 243, 462, 244, 461, 261, 439, 261], "words": [{"text": "D", "boundingBox":
+        [439, 243, 457, 243, 457, 261, 439, 260], "confidence": 0.987}], "appearance":
+        {"style": {"name": "print", "confidence": 0.995}}}, {"text": "NONE", "boundingBox":
+        [643, 243, 701, 242, 701, 261, 643, 261], "words": [{"text": "NONE", "boundingBox":
+        [644, 243, 701, 243, 700, 262, 644, 262], "confidence": 0.987}], "appearance":
+        {"style": {"name": "print", "confidence": 1}}}, {"text": "SAMPLE", "boundingBox":
+        [340, 271, 466, 271, 466, 302, 340, 302], "words": [{"text": "SAMPLE", "boundingBox":
+        [341, 271, 465, 272, 464, 303, 341, 303], "confidence": 0.986}], "appearance":
+        {"style": {"name": "print", "confidence": 1}}}, {"text": "SAMPLE", "boundingBox":
+        [315, 299, 316, 377, 300, 377, 300, 299], "words": [{"text": "SAMPLE", "boundingBox":
+        [316, 300, 317, 377, 301, 377, 300, 300], "confidence": 0.986}], "appearance":
+        {"style": {"name": "print", "confidence": 0.996}}}, {"text": "2 CONNOR", "boundingBox":
+        [324, 306, 428, 305, 428, 324, 324, 326], "words": [{"text": "2", "boundingBox":
+        [326, 309, 336, 308, 336, 326, 326, 326], "confidence": 0.986}, {"text": "CONNOR",
+        "boundingBox": [339, 308, 428, 306, 427, 325, 339, 326], "confidence": 0.985}],
+        "appearance": {"style": {"name": "print", "confidence": 1}}}, {"text": "8
+        123 NORTH MAIN STREET", "boundingBox": [324, 333, 581, 333, 581, 355, 324,
+        356], "words": [{"text": "8", "boundingBox": [325, 336, 336, 335, 336, 356,
+        326, 356], "confidence": 0.905}, {"text": "123", "boundingBox": [340, 335,
+        371, 335, 371, 356, 340, 356], "confidence": 0.987}, {"text": "NORTH", "boundingBox":
+        [375, 335, 444, 334, 445, 356, 375, 356], "confidence": 0.986}, {"text": "MAIN",
+        "boundingBox": [448, 334, 501, 334, 501, 356, 449, 356], "confidence": 0.986},
+        {"text": "STREET", "boundingBox": [505, 334, 581, 335, 581, 356, 505, 356],
+        "confidence": 0.983}], "appearance": {"style": {"name": "print", "confidence":
+        0.999}}}, {"text": "APT. 1", "boundingBox": [340, 358, 399, 357, 399, 378,
+        341, 378], "words": [{"text": "APT.", "boundingBox": [340, 357, 383, 357,
+        383, 378, 340, 378], "confidence": 0.982}, {"text": "1", "boundingBox": [387,
+        357, 399, 357, 399, 377, 388, 378], "confidence": 0.987}], "appearance": {"style":
+        {"name": "print", "confidence": 0.998}}}, {"text": "NORTH QUINCY, MA 02171-1748",
+        "boundingBox": [339, 380, 637, 379, 637, 402, 339, 403], "words": [{"text":
+        "NORTH", "boundingBox": [339, 380, 406, 380, 406, 404, 339, 404], "confidence":
+        0.986}, {"text": "QUINCY,", "boundingBox": [410, 380, 489, 380, 489, 404,
+        410, 404], "confidence": 0.981}, {"text": "MA", "boundingBox": [494, 380,
+        524, 380, 524, 404, 494, 404], "confidence": 0.988}, {"text": "02171-1748",
+        "boundingBox": [529, 380, 638, 379, 637, 403, 528, 404], "confidence": 0.977}],
+        "appearance": {"style": {"name": "print", "confidence": 0.996}}}, {"text":
+        "Connor sample", "boundingBox": [23, 419, 259, 422, 259, 466, 23, 464], "words":
+        [{"text": "Connor", "boundingBox": [24, 419, 132, 421, 131, 463, 24, 465],
+        "confidence": 0.729}, {"text": "sample", "boundingBox": [141, 421, 259, 425,
+        257, 466, 140, 463], "confidence": 0.786}], "appearance": {"style": {"name":
+        "handwriting", "confidence": 0.816}}}, {"text": "VETERAN", "boundingBox":
+        [468, 407, 592, 407, 592, 427, 468, 426], "words": [{"text": "VETERAN", "boundingBox":
+        [477, 408, 590, 408, 590, 427, 478, 427], "confidence": 0.944}], "appearance":
+        {"style": {"name": "print", "confidence": 0.997}}}, {"text": "15 SEX M 16
+        HGT 6''-04\"", "boundingBox": [348, 435, 546, 433, 546, 453, 348, 455], "words":
+        [{"text": "15", "boundingBox": [348, 436, 361, 436, 361, 455, 348, 455], "confidence":
+        0.982}, {"text": "SEX", "boundingBox": [365, 436, 394, 436, 394, 455, 364,
+        455], "confidence": 0.982}, {"text": "M", "boundingBox": [398, 436, 417, 435,
+        417, 455, 398, 455], "confidence": 0.986}, {"text": "16", "boundingBox": [434,
+        435, 446, 435, 446, 455, 434, 455], "confidence": 0.984}, {"text": "HGT",
+        "boundingBox": [450, 435, 482, 435, 483, 455, 450, 455], "confidence": 0.986},
+        {"text": "6''-04\"", "boundingBox": [486, 435, 546, 433, 546, 454, 486, 455],
+        "confidence": 0.926}], "appearance": {"style": {"name": "print", "confidence":
+        0.996}}}, {"text": "DONOR", "boundingBox": [541, 432, 587, 432, 587, 445,
+        541, 446], "words": [{"text": "DONOR", "boundingBox": [546, 432, 587, 432,
+        587, 445, 547, 446], "confidence": 0.985}], "appearance": {"style": {"name":
+        "print", "confidence": 0.943}}}, {"text": "01/12/59", "boundingBox": [617,
+        438, 760, 438, 760, 470, 617, 470], "words": [{"text": "01/12/59", "boundingBox":
+        [618, 439, 761, 439, 759, 471, 618, 471], "confidence": 0.98}], "appearance":
+        {"style": {"name": "print", "confidence": 0.999}}}, {"text": "5 DD 01/12/2016
+        Rev 02/22/2016", "boundingBox": [355, 459, 566, 460, 566, 476, 355, 476],
+        "words": [{"text": "5", "boundingBox": [356, 460, 364, 460, 363, 476, 356,
+        476], "confidence": 0.987}, {"text": "DD", "boundingBox": [367, 460, 389,
+        460, 388, 476, 366, 476], "confidence": 0.987}, {"text": "01/12/2016", "boundingBox":
+        [392, 460, 461, 460, 461, 477, 392, 476], "confidence": 0.98}, {"text": "Rev",
+        "boundingBox": [465, 460, 490, 460, 489, 477, 464, 477], "confidence": 0.986},
+        {"text": "02/22/2016", "boundingBox": [493, 460, 566, 460, 565, 476, 492,
+        477], "confidence": 0.98}], "appearance": {"style": {"name": "print", "confidence":
+        0.999}}}]}], "documentResults": [{"docType": "prebuilt:idDocument:driverLicense",
+        "docTypeConfidence": 0.995, "pageRange": [1, 1], "fields": {"DocumentNumber":
+        {"type": "string", "valueString": "S99988801", "text": "S99988801", "boundingBox":
+        [613, 154, 765, 153, 765, 183, 613, 183], "page": 1, "confidence": 0.99, "elements":
+        ["#/readResults/0/lines/10/words/0"]}, "LastName": {"type": "string", "valueString":
+        "SAMPLE", "text": "SAMPLE", "boundingBox": [341, 271, 465, 272, 464, 303,
+        341, 303], "page": 1, "confidence": 0.983, "elements": ["#/readResults/0/lines/22/words/0"]},
+        "FirstName": {"type": "string", "valueString": "CONNOR", "text": "CONNOR",
+        "boundingBox": [339, 308, 428, 306, 427, 325, 339, 326], "page": 1, "confidence":
+        0.974, "elements": ["#/readResults/0/lines/24/words/1"]}, "DateOfBirth": {"type":
+        "date", "valueDate": "1959-01-12", "text": "01/12/1959", "boundingBox": [611,
+        198, 761, 198, 761, 227, 611, 228], "page": 1, "confidence": 0.99, "elements":
+        ["#/readResults/0/lines/16/words/0"]}, "DateOfExpiration": {"type": "date",
+        "valueDate": "2021-01-12", "text": "01/12/2021", "boundingBox": [444, 198,
+        569, 197, 568, 222, 445, 222], "page": 1, "confidence": 0.99, "elements":
+        ["#/readResults/0/lines/15/words/0"]}, "Sex": {"type": "string", "valueString":
+        "M", "text": "M", "boundingBox": [398, 436, 417, 435, 417, 455, 398, 455],
+        "page": 1, "confidence": 0.99, "elements": ["#/readResults/0/lines/30/words/2"]},
+        "Address": {"type": "string", "valueString": "123 NORTH MAIN STREET APT. 1
+        NORTH QUINCY, MA 02171-1748", "text": "123 NORTH MAIN STREET APT. 1 NORTH
+        QUINCY, MA 02171-1748", "boundingBox": [339, 334, 638, 334, 638, 404, 339,
+        404], "page": 1, "confidence": 0.944, "elements": ["#/readResults/0/lines/25/words/1",
+        "#/readResults/0/lines/25/words/2", "#/readResults/0/lines/25/words/3", "#/readResults/0/lines/25/words/4",
+        "#/readResults/0/lines/26/words/0", "#/readResults/0/lines/26/words/1", "#/readResults/0/lines/27/words/0",
+        "#/readResults/0/lines/27/words/1", "#/readResults/0/lines/27/words/2", "#/readResults/0/lines/27/words/3"]},
+        "Country": {"type": "string", "valueString": "United States", "confidence":
+        0.995}, "Region": {"type": "string", "valueString": "Massachusetts", "confidence":
+        0.99}}}]}}'
+    headers:
+      apim-request-id:
+      - efd64573-18bb-49c2-9455-4eb3f60d9566
+      content-length:
+      - '12251'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 25 Feb 2021 17:09:57 GMT
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      x-content-type-options:
+      - nosniff
+      x-envoy-upstream-service-time:
+      - '39'
+    status:
+      code: 200
+      message: OK
+version: 1
